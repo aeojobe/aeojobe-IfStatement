@@ -20,6 +20,20 @@ public class Lab {
      * @return x if bool is true. if bool is false, return y.
      */
     public int ifExample(boolean bool, int x, int y){
-        return 0;
+        if (bool){
+            return x;
+        }
+             else{
+            return y;
+            }
+    
     }
+    
+    public static void main(String[] args) {
+        Lab p = new Lab();
+      int result =  p.ifExample(true,1,2); 
+      System.out.println(result);
+    }
+      
+
 }
